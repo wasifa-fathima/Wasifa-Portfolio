@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wasifa Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a class="logo" href="#home">Portfolio</a>
+          <header class="navbar">
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+          </header>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hey There. <br />
+            I'm <span>Wasifa </span>Fathima
+          </h1>
+          <br />
+          <h3>and I'm a <span class="text"></span></h3>
+          <br />
+          <a href="Wasifa fathima resume.pdf" class="btn btn2" target="_blank"
+            >My Resume</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-me container">
+        <div class="section-title">
+          <h1>About Me</h1>
+        </div>
+        <div class="row">
+          <div class="content" data-aos="fade-left">
+            <br />
+            <h2>
+              I'm a passionate self-taught front-end web developer. My journey
+              into the world of coding began with a burning curiosity and a love
+              for creating things that are not just visually appealing but also
+              functional and user-friendly.I'm Continuously learning and staying
+              updated with the latest web technologies and best practices to
+              deliver high-quality solutions. With every project, I aim to make
+              it more accessible, user-friendly and intuitive.
+            </h2>
+            <a href="https://github.com/wasifa-fathima" class="btn-box"
+              >More About Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <!--Portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work">
+          <img src="img/Bootstrap .png" alt="Netflix clone" />
+          <div class="layer">
+            <h3>Learning Website</h3>
+            <p>
+              A complete website template built using Bootstrap, a popular
+              front-end framework for developing responsive and mobile-first
+              websites. The template includes pre-designed components with
+              Bootstrap's CSS classes.
+            </p>
+            <a
+              href="https://website-using-bootstrap-wasifa-fathimas-projects.vercel.app//"
+              target="_blank"
+              >View Live</a
+            >
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/landing.png" alt="Landing Page" />
+          <div class="layer">
+            <h3>Landing Page</h3>
+            <p>
+              This project is a simple landing page built using HTML, CSS,
+              JavaScript, and Bootstrap. It showcases a responsive layout
+              designed to engage users and promote a product, service, or idea
+              effectively.
+            </p>
+            <a
+              href="https://landing-page1-wasifa-fathimas-projects.vercel.app/"
+              target="_blank"
+              >View Live</a
+            >
+          </div>
+        </div>
+        <div class="work">
+          <img src="img/mynta.png" alt="Digital Clock" />
+          <div class="layer">
+            <h3>Myntra clone</h3>
+            <p>
+              Designed and implemented a Simple Myntra-inspired project in HTML,
+              CSS, and JavaScript. Browse products with a functional UI. Great
+              for web development beginners to practice and customize.
+            </p>
+            <a
+              href="https://functional-myntra-clone-jusp-wasifa-fathimas-projects.vercel.app/"
+              target="_blank"
+              >View Live</a
+            >
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+
+    <!-- --------Skills Section --------- -->
+    <section id="Skills" class="skills-section">
+      <div class="thumbnail">
+        <div class="shape Triangle-down"></div>
+        <h2 class="headings">Languages</h2>
+        <ul class="skills-list">
+          <li class="list-item">HTML</li>
+          <li class="list-item">CSS</li>
+          <li class="list-item">JavaScript</li>
+        </ul>
+      </div>
+      <div class="thumbnail">
+        <div class="shape square"></div>
+        <h2 class="headings">Frameworks</h2>
+        <ul class="skills-list">
+          <li class="list-item">Bootstrap</li>
+        </ul>
+      </div>
+      <div class="thumbnail">
+        <div class="shape circle"></div>
+        <h2 class="headings">Skills</h2>
+        <ul class="skills-list">
+          <li class="list-item">Github</li>
+          <li class="list-item">Codepen</li>
+        </ul>
+      </div>
+    </section>
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+
+    <!-- --------Contact Form------- -->
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+          </div>
+          <div class="contact-right">
+            <form
+              id="contact"
+              action="https://formspree.io/f/mjvnynvy"
+              method="POST"
+            >
+              <input
+                id="name"
+                class="input border"
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                id="email"
+                class="input border"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="textarea"
+                class="input border"
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button
+                id="submit-btn"
+                type="submit"
+                class="btn btn2"
+                data-form-spree="mjvnynvy"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/wasifa-fathima"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/wasifa-fathima"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://twitter.com/wasifa02"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/wasifa_02"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <br />
+      <p>
+        Copyright © 2024 Made with
+        <i class="fa-solid fa-heart red"></i> by Wasifa Fathima.
+      </p>
+    </div>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/66840046ee.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
